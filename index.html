@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=660, initial-scale=1">
+    <title>DIGGER</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+</head>
+<body onload="javascript: new Application(document.getElementById('canvas'))" class="subtle">
+    <div id="textBox" class="block">
+        <div id="textBlock"></div>
+        <div id="controls" class="controls">
+            <div id='store' class='store'>store</div>
+            <div id='restore' class=restore>restore</div>
+            <div id='endgame' class='endgame'>end game</div>
+        </div>    
+    </div>
+        <header id="header" class="header">
+            <div class="menu text">
+                <div id="itemGame" class="item">
+                    Игра
+                </div>
+                <div id="itemRules" class="item">
+                    Правила
+                </div>
+                <div id="itemScore" class="item">
+                    Результаты
+                </div>
+            </div>
+        </header>
+    
+    <main> 
+    <div class="box">
+            <canvas id="canvas" tabindex="0" width="640" height="512" style="width: 50%; height: 100%;outline: none; -webkit-user-select: none;background-color: black;"></canvas>
+            <audio id='game' preload loop style="display: none;">
+                <source src="assets/Fantasy_Game_Background.mp3" type="audio/mpeg">
+            </audio>
+            <audio id='diamond' preload style="display: none;">
+                <source src='assets/diamond.wav' type="audio/wav;">
+                <source src='assets/diamond.mp3' type="audio/mpeg">
+            </audio>
+            <audio id='stone' preload style="display: none;">
+                <source src='assets/stone.wav' type="audio/wav;">
+                <source src='assets/stone.mp3' type="audio/mpeg">
+            </audio> 
+            <audio id='step' preload style="display: none;">
+                <source src='assets/step.wav' type="audio/wav;">
+                <source src='assets/step.mp3' type="audio/mpeg">
+            </audio>
+            <audio id='dead' preload style="display: none;">
+                <source src='assets/laugh.wav' type="audio/wav;">
+                <source src='assets/laugh.mp3' type="audio/mpeg">
+            </audio>
+    </div>
+    
+        <div class="button">
+        <div id="start" class="start">start</div>
+        <div id="pause" class="pause">pause</div>
+        </div>    
+       
+    </main>          
+        
+    <script type="text/javascript" src="digger.js"></script>
+    </body>
+</html>

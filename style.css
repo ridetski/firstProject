@@ -1,0 +1,137 @@
+.body{
+    height: 100%;
+    cursor: pointer;
+    
+}
+.header{
+    position: relative;
+}
+.block{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    width: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.9);
+    transition: all linear 500ms;
+    
+}
+
+.controls{
+    position: absolute;
+    bottom: 0;
+    display: none;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+}
+
+.store,.restore,.endgame{
+    width: 30%;
+    height: 30px;
+    box-shadow: 0px -2px 5px black;
+}
+
+.store:hover,.restore:hover,.endgame:hover{
+    background-color: green;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tableBox{
+    width: 80%;
+    background-color: rgba(255,255,255,1);
+}
+
+.tableScore{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.menuGame{
+    margin: 0 auto;
+    background-color: rgba(255,255,255,1);
+}
+
+.menuGame h1{
+    text-align: center;
+}
+
+.box{
+    display: none;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px -2px 5px black;
+    height: 25%;
+     
+}
+
+.text{
+    font-size: 1em;
+    text-align: center;
+}
+
+.item{
+   width: 33.33%;     
+}
+
+.item:hover{
+   background-color: gray;    
+}
+
+.button-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.start{
+    background-color: white;
+    box-shadow: 0px -2px 5px black;
+    color: black;
+    width: 25%;
+}
+
+.start:hover,.pause:hover{
+    background-color: green;
+} 
+
+.pause{
+    background-color: white;
+    box-shadow: 0px -2px 5px black;
+    color: black;
+    width: 25%;
+    height: 10%;
+}
+
+.style{
+    text-align: center;
+}
+
+.button{
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    
+}
